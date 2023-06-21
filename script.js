@@ -72,12 +72,6 @@ function addToCart(id) {
     }
     updateCart()
 }
-
-function updateCart() {
-    renderCartItems();
-    // renderSubTotal();
-}
-
 function renderCartItems() {
     cart.forEach((item) => {
         cartItems.innerHTML +=`
@@ -95,6 +89,12 @@ function renderCartItems() {
         `
     })
 }
+
+function updateCart() {
+    renderCartItems();
+    // renderSubTotal();
+}
+
 
 
 
